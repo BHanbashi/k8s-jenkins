@@ -5,3 +5,4 @@ echo "Sleeping for $WAIT"
 sleep $WAIT
 echo "Making progress"
 . query.sh
+kubectl create -n jenkins clusterrolebinding jenkins-account --clusterrole=cluster-admin --serviceaccount=jenkins:jenkins
